@@ -1,9 +1,9 @@
-# 🌐 Bits to Atoms – Digital Design & Fabrication Portfolio
+# 🌐 My Design Logbook – Digital Design & Fabrication Portfolio
 
 ## 👤 About the Student
 - **Name:** Dhruvit Koyani  
 - **Email:** dhruvit.koyani@uni-oldenburg.de
-**University:** Carl von Ossietzky University of Oldenburg
+- **University:** Carl von Ossietzky University of Oldenburg
 - **Program:** M.Sc. Engineering of Socio-Technical Systems  
 - **Matrikelnummer:** 6649717
 
