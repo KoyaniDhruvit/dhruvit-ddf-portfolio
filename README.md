@@ -3,6 +3,7 @@
 ## 👤 About the Student
 - **Name:** Dhruvit Koyani  
 - **Email:** dhruvit.koyani@uni-oldenburg.de
+**University:** Carl von Ossietzky University of Oldenburg
 - **Program:** M.Sc. Engineering of Socio-Technical Systems  
 - **Matrikelnummer:** 6649717
 
@@ -10,8 +11,7 @@
 
 ## 📘 Course Information
 - **Course:** Digital Design & Fabrication (inf175) 
-- **Semester:** Summer Semester 2026  
-- **University:** Carl von Ossietzky Universität Oldenburg  
+- **Semester:** Summer Semester 2026    
 
 ---
 
@@ -25,3 +25,11 @@ Each exercise includes:
 - Design and workflow steps  
 - Fabrication process  
 - Reflections and learnings  
+
+This portfolio focuses not only on final results but also on the thinking and iteration behind them.
+
+---
+
+## 🛠 Exercises
+
+### 🧪 Exercise 1:  Electrical Circuits
