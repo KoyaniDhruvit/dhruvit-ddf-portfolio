@@ -54,7 +54,7 @@ I tested the behavior of a green LED by swapping different resistors ($R1$) to o
 *As the resistance of $R1$ increased, the brightness of the LED noticeably decreased. and the voltage drop on $R1$ increased as the resistance increased. And also changing $R1$ directly affects the LED's operating voltage and brightness.
 
 **Task 1.1: Simple LED Circuit**
-![Simple LED Circuit Setup](./Task 1.1.jpeg)
+![Simple LED Circuit Setup](./Task_1.1.jpeg)
 
 ---
 
@@ -66,7 +66,7 @@ The switch acts as a physical break in the circuit. When the switch is in the "c
 When i connect the switch in opposite direction the LED still works exactly the same way because a switch doesn't have a positive or negative side. It doesn't matter which way you plug it in; its only job is to connect or disconnect the two points in the circuit.
 
 **Task 1.2: Switchable LED Circuit**
-![Switchable LED Setup](./Task 1.2.jpeg)
+![Switchable LED Setup](./Task_1.2.jpeg)
 
 ### 2.3 Dimmable LED Circuit (Task 1.3) 
 **Potentiometer Measurements:**
@@ -79,7 +79,7 @@ When i connect the switch in opposite direction the LED still works exactly the 
 I observed that rotating the potentiometer provides smooth, continuous control over the LED's light intensity. My data shows an inverse relationship between the LED voltage ($V_{LED}$) and the potentiometer output voltage ($V_2$). This is an analog relationship where the potentiometer acts as a variable voltage divider.
 
 **Task 1.3: Dimmable LED Demonstration (Analog)**
-![Dimmable LED Video](./Task 1.3.mp4)
+![Dimmable LED Video](./Task_1.3.mp4)
 
 ---
 
@@ -95,7 +95,7 @@ I observed a specific behavior regarding the USB power board. When powering the 
 The MOSFET acts as an electronic switch. When 5V is applied to the **Gate**, it allows current to flow from the **Drain** to the **Source**, completing the 12V circuit for the LED strip.
 
 **Task 2.1: MOSFET Switching Setup**
-![MOSFET Circuit Setup](./Task 2.1.jpeg)
+![MOSFET Circuit Setup](./Task_2.1.jpeg)
 
 ---
 
@@ -125,9 +125,9 @@ I used a PWM generator at 90Hz to observe how the **Duty Cycle** and **Frequency
 
 **Task 2.2 B: Frequency Observations (Persistence of Vision)**
 *   **5 Hz Flicker:** f = 05 Hz.
-    ![5Hz Frequency Demo](./Task 2.2 B 5 Hz.mp4)
+    ![5Hz Frequency Demo](./Task_2.2_B_45_Hz.mp4)
 *   **45 Hz Flicker:** f = 45 Hz.
-    ![45Hz Frequency Demo](./Task 2.2 B 45 Hz.mp4)
+    ![45Hz Frequency Demo](./Task_2.2_B_5_Hz.mp4)
 
 ---
 
