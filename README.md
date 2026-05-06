@@ -80,9 +80,10 @@ I observed that rotating the potentiometer provides smooth, continuous control o
 
 **Task 1.3: Dimmable LED Demonstration (Analog)**
 <p align="center">
-  <img src="./Task_1.3.gif" width="450"/>
+  <a href="https://raw.githubusercontent.com/KoyaniDhruvit/dhruvit-ddf-portfolio/main/Task_1.3.mp4">
+    <img src="./thumbnail1.jpg" width="450"/>
+  </a>
 </p>
-
 ---
 
 ## 3. Task 2: Transistor Switch Circuit
