@@ -113,7 +113,7 @@ I used a PWM generator at 90Hz to observe how the **Duty Cycle** and **Frequency
 **Mechanism:** Even though the LED is technically switching ON and OFF rapidly, the eye perceives the average power as a change in intensity.
 
 **Task 2.2: PWM Duty Cycle Setup**
-![PWM Setup](./Task 2.2.jpeg)
+![PWM Setup](./Task_2.2.jpeg)
 
 #### Part B: Frequency ($D = 0.5$)
 | Frequency [Hz] | Visual Observation |
