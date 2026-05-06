@@ -79,7 +79,9 @@ When i connect the switch in opposite direction the LED still works exactly the 
 I observed that rotating the potentiometer provides smooth, continuous control over the LED's light intensity. My data shows an inverse relationship between the LED voltage ($V_{LED}$) and the potentiometer output voltage ($V_2$). This is an analog relationship where the potentiometer acts as a variable voltage divider.
 
 **Task 1.3: Dimmable LED Demonstration (Analog)**
-![Dimmable LED Video](./Task_1.3.mp4)
+<p align="center">
+  <img src="./Task_1.3.gif" width="450"/>
+</p>
 
 ---
 
