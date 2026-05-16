@@ -136,3 +136,165 @@ I used a PWM generator at 90Hz to observe how the **Duty Cycle** and **Frequency
 
 ## 4. Conclusion
 Through this exercise, I learned the difference between analog dimming (potentiometer) and digital dimming (PWM), as well as the utility of MOSFETs in controlling high-voltage loads with low-voltage signals.
+
+
+# ⏰ Exercise 2 – Arduino Alarm Clock
+
+## 📖 Project Overview
+In this exercise, I built a functional Arduino-based alarm clock using multiple electronic components and sub-circuits.
+
+
+# 🔌 Sub-Circuit 1 – Buzzer Test
+
+The first task was testing the buzzer using Arduino digital output.
+
+## 📷 Circuit Images
+
+
+<p align="center">
+  <img src="images/buzzer1.jpg" width="400"/>
+  <img src="images/buzzer2.jpg" width="400"/>
+</p>
+
+## 🎥 Working Video
+
+[Watch Video](videos/buzzer-test.mp4)
+
+## 💡 Observations
+- Linux Problem with rights (sudo chmod 666 /dev/ttyACM0)
+- Made loud beeping
+- Didnt connect vin
+- Library commented out
+- had to switch to pin 12 into the source code
+- No Resistor used -> causes louder peeping
+
+---
+
+# 📺 Sub-Circuit 2 – LCD Display
+
+The LCD display was connected using I2C communication.
+
+## 📷 LCD Circuit
+
+<p align="center">
+  <img src="images/lcd1.jpg" width="400"/>
+  <img src="images/lcd2.jpg" width="400"/>
+</p>
+
+## 🎥 LCD Demo
+
+[Watch Video](videos/lcd-demo.mp4)
+
+## 💡 & Challenges
+
+- The information was displayed through the Serial Monitor instead of directly appearing on the LCD at first.
+- Installed the additional Adafruit BusIO dependency library to make the LCD communication work correctly.
+- Tested different outputs and displayed useful information on the screen once the setup was functioning.
+
+---
+
+# 🕒 Sub-Circuit 3 – RTC Module
+
+The RTC module was added to keep real-world time.
+
+## 📷 RTC Setup
+
+<p align="center">
+  <img src="images/rtc1.jpg" width="400"/>
+  <img src="images/rtc2.jpg" width="400"/>
+</p>
+
+## 🎥 RTC Working Video
+
+[Watch Video](videos/rtc-demo.mp4)
+
+## 💡 Observations & Challenges
+- Used Breadboard to connect the battery, with the LCD Display
+- This confirmed that the button input was being detected correctly by the Arduino.
+- Used real time
+- After uploading file again, the current time was saved and reapplied again
+	- We commented //rtc.adjust(DateTime(F(_DATE), F(TIME_))); out to achieve this
+
+---
+
+# 🔘 Sub-Circuit 4 – Push Buttons
+
+Push buttons were connected using INPUT_PULLUP configuration.
+
+## 📷 Button Circuit
+
+<p align="center">
+  <img src="images/button1.jpg" width="400"/>
+  <img src="images/button2.jpg" width="400"/>
+</p>
+
+## 🎥 Button Demo
+
+[Watch Video](videos/button-demo.mp4)
+
+## 💡 Observations & Challenges
+- When the push button was pressed, the onboard Arduino “L” LED lit up successfully.
+- Buttons were used for alarm controls.
+
+
+---
+
+# ⏰ Final Alarm Clock
+
+The final system combined all sub-circuits into one working alarm clock.
+
+| Wire Color | Arduino Pin |
+|---|---|
+| White | 3 Pin |
+| Red | 2 Pin |
+| Yellow | 4 Pin |
+| Black | 5 Pin |
+
+## 📷 Final Project
+
+<p align="center">
+  <img src="images/final1.jpg" width="500"/>
+  <img src="images/final2.jpg" width="500"/>
+</p>
+
+---
+
+# 🎥 Final Working Demo
+
+[Watch Final Alarm Clock Video](videos/final-alarm-clock.mp4)
+
+---
+
+# 💻 Arduino Code
+
+
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+#include <RTClib.h>
+
+LiquidCrystal_I2C lcd(0x27,16,2);
+RTC_DS3231 rtc;
+
+void setup() {
+  lcd.init();
+  lcd.backlight();
+
+  rtc.begin();
+
+  lcd.setCursor(0,0);
+  lcd.print("Alarm Clock");
+}
+
+void loop() {
+  DateTime now = rtc.now();
+
+  lcd.setCursor(0,1);
+
+  lcd.print(now.hour());
+  lcd.print(":");
+  lcd.print(now.minute());
+  lcd.print(":");
+  lcd.print(now.second());
+
+  delay(1000);
+}
