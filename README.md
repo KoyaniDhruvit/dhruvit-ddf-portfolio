@@ -59,7 +59,6 @@ As the resistance of $R1$ increased, the brightness of the LED noticeably decrea
 <p align="center">
   <img src="Task_1.1.jpeg" width="300"/>
 </p>
----
 
 ### 1.2 Switchable LED Circuit  
 
@@ -96,7 +95,7 @@ I observed that rotating the potentiometer provides smooth, continuous control o
 ### 🎥 Dimmable LED Demonstration (Analog)
 
 [Watch Video](Task_1.3.mp4)
----
+
 
 ## Task 2: Transistor Switch Circuit
 
@@ -255,17 +254,94 @@ Push buttons were connected using INPUT_PULLUP configuration.
 
 ## ⏰ Final Alarm Clock
 
-The final system combined all sub-circuits into one working alarm clock.
+The final system combined all sub-circuits into one fully interactive alarm clock system developed through multiple iterations and custom modifications.
+
+Unlike the basic example provided in class, this implementation included several additional interactive features and custom logic improvements.
+
+### 🚀 Custom Features Implemented
+
+- Multi-page LCD menu system
+- Alarm enable/disable controls
+- Custom alarm time configuration
+- Multiple selectable alarm melodies
+- Melody preview system
+- Snooze functionality
+- LED flashing visual feedback
+- LCD backlight flashing during alarm
+- Gesture-controlled snooze using ultrasonic distance sensor
+- Real-time clock synchronization
+- Interactive button navigation system
+
+---
+
+### 🎵 Melody System
+
+Three different alarm styles were implemented:
+
+| Melody Mode | Description |
+|---|---|
+| Classic Beep | Standard repeating alarm tone |
+| Digital Pulse | Pulsing digital-style sound |
+| Arpeggio Fun | Musical ascending tone pattern |
+
+Users could preview melodies before selecting them.
+
+---
+
+### 👋 Gesture Control Feature
+
+An ultrasonic distance sensor (URM37) was integrated into the system to create a gesture-based snooze function.
+
+When the alarm rings:
+- Waving a hand near the sensor automatically activates snooze mode.
+- The system detects nearby motion using distance measurements.
+- This created a touchless interaction system for the alarm clock.
+
+This feature required additional testing and debugging because the sensor initially did not respond correctly.
+
+---
+
+### 🧪 Sensor Testing & Debugging
+
+Before integrating the ultrasonic sensor into the final alarm system, a separate testing script was used to validate sensor communication and distance measurements.
+
+The testing process helped verify:
+- Trigger and Echo pin configuration
+- Distance calculation
+- Sensor timing behavior
+- Hand wave detection range
+
+After successful testing, the gesture detection logic was integrated into the final alarm clock system.
+
+---
+
+### 🔌 Final Alarm Clock Wiring
 
 | Wire Color | Arduino Pin |
 |---|---|
-| White | 3 Pin |
-| Red | 2 Pin |
-| Yellow | 4 Pin |
-| Black | 5 Pin |
-
-### 🎥 Final Working Demo
-
-[Watch Final Alarm Clock Video](Ex.2_Alaram.mp4)
+| White | Pin 3 |
+| Red | Pin 2 |
+| Yellow | Pin 4 |
+| Black | Pin 5 |
 
 ---
+
+### 🎮 Button Functions
+
+| Button Color | Function |
+|---|---|
+| Red | Menu Navigation |
+| White | Alarm ON/OFF |
+| Yellow | Set Hour / Stop Alarm |
+| Black | Set Minute / Snooze |
+
+---
+
+### 🎥 Final Working Demonstration
+
+[▶ Watch Final Alarm Clock Demo](Ex_2_Alarm.mp4)
+
+---
+
+
+
