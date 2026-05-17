@@ -1,6 +1,6 @@
 # 🌐 My Design Logbook – Digital Design & Fabrication Portfolio
 
-## 👤 About the Student
+## 👤 About Me
 - **Name:** Dhruvit Koyani  
 - **Email:** dhruvit.koyani@uni-oldenburg.de
 - **University:** Carl von Ossietzky University of Oldenburg
@@ -65,6 +65,8 @@ As the resistance of $R1$ increased, the brightness of the LED noticeably decrea
 
 I introduced a 2-position switch and a 1kΩ potentiometer to control the state and intensity of the light.
 
+### 💡 Observations
+
 The switch acts as a physical break in the circuit. When the switch is in the "closed" position, the circuit is complete and the LED lights up. When it is "open," the current flow stops and the LED turns off.
 
 When i connect the switch in opposite direction the LED still works exactly the same way because a switch doesn't have a positive or negative side. It doesn't matter which way you plug it in; its only job is to connect or disconnect the two points in the circuit.
@@ -86,14 +88,14 @@ When i connect the switch in opposite direction the LED still works exactly the 
 | **Dimmed** | 2.30 V | 4.45 V |
 | **OFF** | 0.005 V | 4.50 V |
 
+### 💡 Observations
+
 I observed that rotating the potentiometer provides smooth, continuous control over the LED's light intensity. My data shows an inverse relationship between the LED voltage ($V_{LED}$) and the potentiometer output voltage ($V_2$). This is an analog relationship where the potentiometer acts as a variable voltage divider.
 
-**Task 1.3: Dimmable LED Demonstration (Analog)**
-<p align="center">
-  <a href="https://raw.githubusercontent.com/KoyaniDhruvit/dhruvit-ddf-portfolio/main/Task_1.3.mp4">
-    <img src="./thumbnail1.jpg" width="300"/>
-  </a>
-</p>
+
+### 🎥 Dimmable LED Demonstration (Analog)
+
+[▶ Watch Demonstration Video](Task_1.3.mp4)
 ---
 
 ## Task 2: Transistor Switch Circuit
@@ -102,13 +104,15 @@ I observed that rotating the potentiometer provides smooth, continuous control o
 
 Using an **IRLZ44N NPN MOSFET**, I controlled a 12V LED strip using a 5V control signal.
 
+### 💡 Observations
+
 I observed a specific behavior regarding the USB power board. When powering the 5V control side via a laptop or mobile device, the voltage was detected and the board functioned as expected. However, when using a direct power adapter, the USB module did not show the same behavior or detection.
 
 **Principle of Operation:**
 The MOSFET acts as an electronic switch. When 5V is applied to the **Gate**, it allows current to flow from the **Drain** to the **Source**, completing the 12V circuit for the LED strip.
 
 
-## 📷 MOSFET Switching Setup
+### 📷 MOSFET Switching Setup
 
 <p align="center">
   <img src="Task.2.1.jpeg" width="300"/>
