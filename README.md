@@ -173,8 +173,7 @@ The LCD display was connected using I2C communication.
 ## 📷 LCD Circuit
 
 <p align="center">
-  <img src="images/lcd1.jpg" width="400"/>
-  <img src="images/lcd2.jpg" width="400"/>
+  <img src="Ex.2_Task.3.jpeg" width="400"/>
 </p>
 
 ## 🎥 LCD Demo
@@ -196,7 +195,7 @@ The RTC module was added to keep real-world time.
 ## 📷 RTC Setup
 
 <p align="center">
-  <img src="images/rtc1.jpg" width="400"/>
+  <img src="Ex.2_Task.3.jpg" width="400"/>
 </p>
 
 ## 🎥 RTC Working Video
