@@ -54,8 +54,11 @@ I tested the behavior of a green LED by swapping different resistors ($R1$) to o
 *As the resistance of $R1$ increased, the brightness of the LED noticeably decreased. and the voltage drop on $R1$ increased as the resistance increased. And also changing $R1$ directly affects the LED's operating voltage and brightness.
 
 **Task 1.1: Simple LED Circuit**
-![Simple LED Circuit Setup](./Task_1.1.jpeg)
 
+![Simple LED Circuit Setup]
+<p align="center">
+  <img src="Task_1.1.jpeg" width="300"/>
+</p>
 ---
 
 ### 2.2 Switchable LED Circuit (Task 1.2) 
@@ -65,9 +68,12 @@ The switch acts as a physical break in the circuit. When the switch is in the "c
 
 When i connect the switch in opposite direction the LED still works exactly the same way because a switch doesn't have a positive or negative side. It doesn't matter which way you plug it in; its only job is to connect or disconnect the two points in the circuit.
 
-**Task 1.2: Switchable LED Circuit**
-![Switchable LED Setup](./Task_1.2.jpeg)
 
+## 📷 Switchable LED Circuit
+
+<p align="center">
+  <img src="Task_1.2.jpeg" width="300"/>
+</p>
 ### 2.3 Dimmable LED Circuit (Task 1.3) 
 **Potentiometer Measurements:**
 | Position | $V_{LED}$ [V] | $V_2$ [V] |
@@ -81,7 +87,7 @@ I observed that rotating the potentiometer provides smooth, continuous control o
 **Task 1.3: Dimmable LED Demonstration (Analog)**
 <p align="center">
   <a href="https://raw.githubusercontent.com/KoyaniDhruvit/dhruvit-ddf-portfolio/main/Task_1.3.mp4">
-    <img src="./thumbnail1.jpg" width="450"/>
+    <img src="./thumbnail1.jpg" width="300"/>
   </a>
 </p>
 ---
@@ -97,9 +103,12 @@ I observed a specific behavior regarding the USB power board. When powering the 
 **Principle of Operation:**
 The MOSFET acts as an electronic switch. When 5V is applied to the **Gate**, it allows current to flow from the **Drain** to the **Source**, completing the 12V circuit for the LED strip.
 
-**Task 2.1: MOSFET Switching Setup**
-![MOSFET Circuit Setup](./Task_2.1.jpeg)
 
+## 📷 MOSFET Switching Setu
+
+<p align="center">
+  <img src="Task.2.1.jpeg" width="300"/>
+</p>
 ---
 
 ### 3.2 Dimmable LED Strip (Task 2.2)
@@ -115,8 +124,12 @@ I used a PWM generator at 90Hz to observe how the **Duty Cycle** and **Frequency
 **Relationship:** I observed a direct linear relationship: as the **Duty Cycle increased**, the **brightness increased** proportionally. 
 **Mechanism:** Even though the LED is technically switching ON and OFF rapidly, the eye perceives the average power as a change in intensity.
 
-**Task 2.2: PWM Duty Cycle Setup**
-![PWM Setup](Task_2.2.jpeg)
+## 📷 PWM Duty Cycle Setup
+
+<p align="center">
+  <img src="Task_2.2.jpeg" width="300"/>
+</p>
+
 
 #### Part B: Frequency ($D = 0.5$)
 | Frequency [Hz] | Visual Observation |
@@ -152,7 +165,7 @@ The first task was testing the buzzer using Arduino digital output.
 
 
 <p align="center">
-  <img src="Ex.2_Task.1.jpeg" width="400"/>
+  <img src="Ex.2_Task.1.jpeg" width="300"/>
 </p>
 
 
@@ -173,7 +186,7 @@ The LCD display was connected using I2C communication.
 ## 📷 LCD Circuit
 
 <p align="center">
-  <img src="Ex.2_Task.3.jpeg" width="400"/>
+  <img src="Ex.2_Task.2.jpeg" width="400"/>
 </p>
 
 ## 🎥 LCD Demo
@@ -195,7 +208,7 @@ The RTC module was added to keep real-world time.
 ## 📷 RTC Setup
 
 <p align="center">
-  <img src="Ex.2_Task.3.jpg" width="400"/>
+  <img src="Ex.2_Task.3.jpg" width="300"/>
 </p>
 
 ## 🎥 RTC Working Video
