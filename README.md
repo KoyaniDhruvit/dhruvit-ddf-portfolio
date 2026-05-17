@@ -115,7 +115,7 @@ The MOSFET acts as an electronic switch. When 5V is applied to the **Gate**, it 
 ### 📷 MOSFET Switching Setup
 
 <p align="center">
-  <img src="Task.2.1.jpeg" width="300"/>
+  <img src="Task_2.1.jpeg" width="300"/>
 </p>
 ---
 
@@ -222,7 +222,7 @@ The RTC module was added to keep real-world time.
 ### 📷 RTC Setup
 
 <p align="center">
-  <img src="Ex.2_Task.3.jpg" width="300"/>
+  <img src="Ex.2_Task.3.jpeg" width="300"/>
 </p>
 
 ### 🎥 RTC Working Video
