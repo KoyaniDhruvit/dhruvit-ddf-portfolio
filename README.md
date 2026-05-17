@@ -337,9 +337,10 @@ After successful testing, the gesture detection logic was integrated into the fi
 
 ---
 
+
 ### 🎥 Final Working Demonstration
 
-[▶ Watch Final Alarm Clock Demo](Ex.2_Alaram.mp4)
+[▶ Watch Final Alarm Clock Demo](https://github.com/KoyaniDhruvit/dhruvit-ddf-portfolio/raw/main/Ex.2_Alaram.mp4)
 
 ---
 
