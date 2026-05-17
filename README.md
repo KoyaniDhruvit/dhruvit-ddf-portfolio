@@ -95,7 +95,7 @@ I observed that rotating the potentiometer provides smooth, continuous control o
 
 ### 🎥 Dimmable LED Demonstration (Analog)
 
-[▶ Watch Demonstration Video](Task_1.3.mp4)
+[Watch Video](Task_1.3.mp4)
 ---
 
 ## Task 2: Transistor Switch Circuit
@@ -123,6 +123,9 @@ The MOSFET acts as an electronic switch. When 5V is applied to the **Gate**, it 
 I used a PWM generator at 90Hz to observe how the **Duty Cycle** and **Frequency** affect the perceived light.
 
 #### Part A: Duty Cycle ($f = 90\text{Hz}$)
+
+### 💡 Observations
+
 * **2% Duty Cycle:** The light was dim.
 * **15% Duty Cycle:** The light was noticeably brighter than at 2%.
 * **40% Duty Cycle:** The light reached a moderate level of brightness.
@@ -159,6 +162,8 @@ I used a PWM generator at 90Hz to observe how the **Duty Cycle** and **Frequency
 ## Conclusion
 Through this exercise, I learned the difference between analog dimming (potentiometer) and digital dimming (PWM), as well as the utility of MOSFETs in controlling high-voltage loads with low-voltage signals.
 
+---
+---
 
 # ⏰ Exercise 2 – Arduino Alarm Clock
 
