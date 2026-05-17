@@ -30,18 +30,19 @@ This portfolio focuses not only on final results but also on the thinking and it
 
 ---
 
-## 🛠 Exercises
+# 🛠 Exercises
 
-### 🧪 Exercise 1:  Electrical Circuits
+# 🧪 Exercise 1:  Electrical Circuits
 
-## 1. Introduction
+## Introduction
+
 In this lab, I built and tested five different electrical circuits to explore LED control and transistor switching. This portfolio documents the measurements, observations, and visual results of these experiments.
 
 ---
 
-## 2. Task 1: LED Control Circuit
+## Task 1: LED Control Circuit
 
-### 2.1 Simple LED Circuit (Task 1.1)
+### 1.1 Simple LED Circuit 
 I tested the behavior of a green LED by swapping different resistors ($R1$) to observe changes in current and brightness.
 
 | R1 [Ω] | Measured $V_1$ [V] | Measured $V_{LED}$ [V] |
@@ -50,18 +51,18 @@ I tested the behavior of a green LED by swapping different resistors ($R1$) to o
 | 1000 | 2.77 | 2.51 |
 | 4700 | 2.97 | 2.31 |
 
-**Observations:** 
-*As the resistance of $R1$ increased, the brightness of the LED noticeably decreased. and the voltage drop on $R1$ increased as the resistance increased. And also changing $R1$ directly affects the LED's operating voltage and brightness.
+### 💡 Observations
 
-**Task 1.1: Simple LED Circuit**
+As the resistance of $R1$ increased, the brightness of the LED noticeably decreased. The voltage drop across $R1$ increased with higher resistance values. Changing $R1$ directly affected the LED operating voltage and brightness.
 
-![Simple LED Circuit Setup]
+### 📷 Simple LED Circuit Setup
 <p align="center">
   <img src="Task_1.1.jpeg" width="300"/>
 </p>
 ---
 
-### 2.2 Switchable LED Circuit (Task 1.2) 
+### 1.2 Switchable LED Circuit  
+
 I introduced a 2-position switch and a 1kΩ potentiometer to control the state and intensity of the light.
 
 The switch acts as a physical break in the circuit. When the switch is in the "closed" position, the circuit is complete and the LED lights up. When it is "open," the current flow stops and the LED turns off.
@@ -69,12 +70,15 @@ The switch acts as a physical break in the circuit. When the switch is in the "c
 When i connect the switch in opposite direction the LED still works exactly the same way because a switch doesn't have a positive or negative side. It doesn't matter which way you plug it in; its only job is to connect or disconnect the two points in the circuit.
 
 
-## 📷 Switchable LED Circuit
+### 📷 Switchable LED Circuit
 
 <p align="center">
   <img src="Task_1.2.jpeg" width="300"/>
 </p>
-### 2.3 Dimmable LED Circuit (Task 1.3) 
+
+
+### 1.3 Dimmable LED Circuit 
+
 **Potentiometer Measurements:**
 | Position | $V_{LED}$ [V] | $V_2$ [V] |
 | :--- | :--- | :--- |
@@ -92,9 +96,9 @@ I observed that rotating the potentiometer provides smooth, continuous control o
 </p>
 ---
 
-## 3. Task 2: Transistor Switch Circuit
+## Task 2: Transistor Switch Circuit
 
-### 3.1 Switchable LED Strip (Task 2.1)
+### 2.1 Switchable LED Strip 
 
 Using an **IRLZ44N NPN MOSFET**, I controlled a 12V LED strip using a 5V control signal.
 
@@ -104,14 +108,14 @@ I observed a specific behavior regarding the USB power board. When powering the 
 The MOSFET acts as an electronic switch. When 5V is applied to the **Gate**, it allows current to flow from the **Drain** to the **Source**, completing the 12V circuit for the LED strip.
 
 
-## 📷 MOSFET Switching Setu
+## 📷 MOSFET Switching Setup
 
 <p align="center">
   <img src="Task.2.1.jpeg" width="300"/>
 </p>
 ---
 
-### 3.2 Dimmable LED Strip (Task 2.2)
+### 2.2 Dimmable LED Strip
 I used a PWM generator at 90Hz to observe how the **Duty Cycle** and **Frequency** affect the perceived light.
 
 #### Part A: Duty Cycle ($f = 90\text{Hz}$)
@@ -124,7 +128,7 @@ I used a PWM generator at 90Hz to observe how the **Duty Cycle** and **Frequency
 **Relationship:** I observed a direct linear relationship: as the **Duty Cycle increased**, the **brightness increased** proportionally. 
 **Mechanism:** Even though the LED is technically switching ON and OFF rapidly, the eye perceives the average power as a change in intensity.
 
-## 📷 PWM Duty Cycle Setup
+### 📷 PWM Duty Cycle Setup
 
 <p align="center">
   <img src="Task_2.2.jpeg" width="300"/>
@@ -141,13 +145,14 @@ I used a PWM generator at 90Hz to observe how the **Duty Cycle** and **Frequency
 
 **Task 2.2 B: Frequency Observations (Persistence of Vision)**
 *   **5 Hz Flicker:** f = 05 Hz.
-    ![5Hz Frequency Demo](./Task_2.2_B_45_Hz.mp4)
-*   **45 Hz Flicker:** f = 45 Hz.
-    ![45Hz Frequency Demo](./Task_2.2_B_5_Hz.mp4)
+    [Watch 5Hz Frequency Demo](Task_2.2_B_45_Hz.mp4)
+
+*   **45 Hz Flicker:** f = 45 Hz.  
+	[Watch 45Hz Frequency Demo](Task_2.2_B_5_Hz.mp4)
 
 ---
 
-## 4. Conclusion
+## Conclusion
 Through this exercise, I learned the difference between analog dimming (potentiometer) and digital dimming (PWM), as well as the utility of MOSFETs in controlling high-voltage loads with low-voltage signals.
 
 
@@ -157,11 +162,11 @@ Through this exercise, I learned the difference between analog dimming (potentio
 In this exercise, I built a functional Arduino-based alarm clock using multiple electronic components and sub-circuits.
 
 
-# 🔌 Sub-Circuit 1 – Buzzer Test
+## 🔌 Sub-Circuit 1 – Buzzer Test
 
 The first task was testing the buzzer using Arduino digital output.
 
-## 📷 Circuit Images
+### 📷 Circuit Images
 
 
 <p align="center">
@@ -169,7 +174,7 @@ The first task was testing the buzzer using Arduino digital output.
 </p>
 
 
-## 💡 Observations
+### 💡 Observations
 - Linux Problem with rights (sudo chmod 666 /dev/ttyACM0)
 - Made loud beeping
 - Didnt connect vin
@@ -179,21 +184,21 @@ The first task was testing the buzzer using Arduino digital output.
 
 ---
 
-# 📺 Sub-Circuit 2 – LCD Display
+## 📺 Sub-Circuit 2 – LCD Display
 
 The LCD display was connected using I2C communication.
 
-## 📷 LCD Circuit
+### 📷 LCD Circuit
 
 <p align="center">
-  <img src="Ex.2_Task.2.jpeg" width="400"/>
+  <img src="Ex.2_Task.2.jpeg" width="300"/>
 </p>
 
-## 🎥 LCD Demo
+### 🎥 LCD Demo
 
 [Watch Video](Ex.2_Task.2.mp4)
 
-## 💡 & Challenges
+### 💡 Observations & Challenges
 
 - The information was displayed through the Serial Monitor instead of directly appearing on the LCD at first.
 - Installed the additional Adafruit BusIO dependency library to make the LCD communication work correctly.
@@ -201,21 +206,21 @@ The LCD display was connected using I2C communication.
 
 ---
 
-# 🕒 Sub-Circuit 3 – RTC Module
+## 🕒 Sub-Circuit 3 – RTC Module
 
 The RTC module was added to keep real-world time.
 
-## 📷 RTC Setup
+### 📷 RTC Setup
 
 <p align="center">
   <img src="Ex.2_Task.3.jpg" width="300"/>
 </p>
 
-## 🎥 RTC Working Video
+### 🎥 RTC Working Video
 
 [Watch Video](Ex.2_Task.3.mp4)
 
-## 💡 Observations & Challenges
+### 💡 Observations & Challenges
 - Used Breadboard to connect the battery, with the LCD Display
 - This confirmed that the button input was being detected correctly by the Arduino.
 - Used real time
@@ -224,22 +229,22 @@ The RTC module was added to keep real-world time.
 
 ---
 
-# 🔘 Sub-Circuit 4 – Push Buttons
+## 🔘 Sub-Circuit 4 – Push Buttons
 
 Push buttons were connected using INPUT_PULLUP configuration.
 
-## 🎥 Button Demo
+### 🎥 Button Demo
 
-[Watch Video](vEx.2_Task.4.mp4)
+[Watch Video](Ex.2_Task.4.mp4)
 
-## 💡 Observations & Challenges
+### 💡 Observations & Challenges
 - When the push button was pressed, the onboard Arduino “L” LED lit up successfully.
 - Buttons were used for alarm controls.
 
 
 ---
 
-# ⏰ Final Alarm Clock
+## ⏰ Final Alarm Clock
 
 The final system combined all sub-circuits into one working alarm clock.
 
@@ -250,7 +255,7 @@ The final system combined all sub-circuits into one working alarm clock.
 | Yellow | 4 Pin |
 | Black | 5 Pin |
 
-# 🎥 Final Working Demo
+### 🎥 Final Working Demo
 
 [Watch Final Alarm Clock Video](Ex.2_Alaram.mp4)
 
