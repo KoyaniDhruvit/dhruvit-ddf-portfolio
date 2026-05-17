@@ -152,13 +152,9 @@ The first task was testing the buzzer using Arduino digital output.
 
 
 <p align="center">
-  <img src="images/buzzer1.jpg" width="400"/>
-  <img src="images/buzzer2.jpg" width="400"/>
+  <img src="Ex.2_Task.1.jpeg" width="400"/>
 </p>
 
-## 🎥 Working Video
-
-[Watch Video](videos/buzzer-test.mp4)
 
 ## 💡 Observations
 - Linux Problem with rights (sudo chmod 666 /dev/ttyACM0)
@@ -183,7 +179,7 @@ The LCD display was connected using I2C communication.
 
 ## 🎥 LCD Demo
 
-[Watch Video](videos/lcd-demo.mp4)
+[Watch Video](Ex.2_Task.2.mp4)
 
 ## 💡 & Challenges
 
@@ -201,12 +197,11 @@ The RTC module was added to keep real-world time.
 
 <p align="center">
   <img src="images/rtc1.jpg" width="400"/>
-  <img src="images/rtc2.jpg" width="400"/>
 </p>
 
 ## 🎥 RTC Working Video
 
-[Watch Video](videos/rtc-demo.mp4)
+[Watch Video](Ex.2_Task.3.mp4)
 
 ## 💡 Observations & Challenges
 - Used Breadboard to connect the battery, with the LCD Display
@@ -221,16 +216,9 @@ The RTC module was added to keep real-world time.
 
 Push buttons were connected using INPUT_PULLUP configuration.
 
-## 📷 Button Circuit
-
-<p align="center">
-  <img src="images/button1.jpg" width="400"/>
-  <img src="images/button2.jpg" width="400"/>
-</p>
-
 ## 🎥 Button Demo
 
-[Watch Video](videos/button-demo.mp4)
+[Watch Video](vEx.2_Task.4.mp4)
 
 ## 💡 Observations & Challenges
 - When the push button was pressed, the onboard Arduino “L” LED lit up successfully.
@@ -250,51 +238,8 @@ The final system combined all sub-circuits into one working alarm clock.
 | Yellow | 4 Pin |
 | Black | 5 Pin |
 
-## 📷 Final Project
-
-<p align="center">
-  <img src="images/final1.jpg" width="500"/>
-  <img src="images/final2.jpg" width="500"/>
-</p>
-
----
-
 # 🎥 Final Working Demo
 
-[Watch Final Alarm Clock Video](videos/final-alarm-clock.mp4)
+[Watch Final Alarm Clock Video](Ex.2_Alaram.mp4)
 
 ---
-
-# 💻 Arduino Code
-
-
-#include <Wire.h>
-#include <LiquidCrystal_I2C.h>
-#include <RTClib.h>
-
-LiquidCrystal_I2C lcd(0x27,16,2);
-RTC_DS3231 rtc;
-
-void setup() {
-  lcd.init();
-  lcd.backlight();
-
-  rtc.begin();
-
-  lcd.setCursor(0,0);
-  lcd.print("Alarm Clock");
-}
-
-void loop() {
-  DateTime now = rtc.now();
-
-  lcd.setCursor(0,1);
-
-  lcd.print(now.hour());
-  lcd.print(":");
-  lcd.print(now.minute());
-  lcd.print(":");
-  lcd.print(now.second());
-
-  delay(1000);
-}
