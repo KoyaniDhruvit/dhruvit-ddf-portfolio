@@ -57,7 +57,9 @@ As the resistance of $R1$ increased, the brightness of the LED noticeably decrea
 
 ### 📷 Simple LED Circuit Setup
 <p align="center">
-  <img src="Task_1.1.jpeg" width="300"/>
+	<img width="300" height="300" alt="Task 1 1" src="https://github.com/user-attachments/assets/71fc800b-9c74-4c3e-baba-1b298deb4084" />
+
+ 
 </p>
 
 ### 1.2 Switchable LED Circuit  
@@ -74,7 +76,8 @@ When i connect the switch in opposite direction the LED still works exactly the 
 ### 📷 Switchable LED Circuit
 
 <p align="center">
-  <img src="Task_1.2.jpeg" width="300"/>
+  <img width="300" height="450" alt="Task 1 2" src="https://github.com/user-attachments/assets/9fc0ad9a-2fd1-4767-afbd-1051f4568fc8" />
+
 </p>
 
 
@@ -92,9 +95,9 @@ When i connect the switch in opposite direction the LED still works exactly the 
 I observed that rotating the potentiometer provides smooth, continuous control over the LED's light intensity. My data shows an inverse relationship between the LED voltage ($V_{LED}$) and the potentiometer output voltage ($V_2$). This is an analog relationship where the potentiometer acts as a variable voltage divider.
 
 
-### 🎥 Dimmable LED Demonstration (Analog)
+### 🎥 Dimmable LED Demonstration (Analog)  
 
-[Watch Video](Task_1.3.mp4)
+https://github.com/user-attachments/assets/b75dadea-3125-4c4f-8b81-2e51e7971104
 
 
 ## Task 2: Transistor Switch Circuit
@@ -114,7 +117,8 @@ The MOSFET acts as an electronic switch. When 5V is applied to the **Gate**, it 
 ### 📷 MOSFET Switching Setup
 
 <p align="center">
-  <img src="Task_2.1.jpeg" width="300"/>
+  <img width="300" height="450" alt="Task 2 1" src="https://github.com/user-attachments/assets/e339e4f1-7e34-4ad2-9233-442bdf2164a8" />
+
 </p>
 ---
 
@@ -137,7 +141,8 @@ I used a PWM generator at 90Hz to observe how the **Duty Cycle** and **Frequency
 ### 📷 PWM Duty Cycle Setup
 
 <p align="center">
-  <img src="Task_2.2.jpeg" width="300"/>
+  <img width="300" height="450" alt="Task 2 2" src="https://github.com/user-attachments/assets/86881a3d-3ad1-45d9-a86e-dda159d1f794" />
+
 </p>
 
 
@@ -151,10 +156,12 @@ I used a PWM generator at 90Hz to observe how the **Duty Cycle** and **Frequency
 
 **Task 2.2 B: Frequency Observations (Persistence of Vision)**
 *   **5 Hz Flicker:** f = 05 Hz.
-    [Watch 5Hz Frequency Demo](Task_2.2_B_45_Hz.mp4)
+*   
+    https://github.com/user-attachments/assets/29149cca-dbe1-4801-a0b8-55bc6a9cf328
 
-*   **45 Hz Flicker:** f = 45 Hz.  
-	[Watch 45Hz Frequency Demo](Task_2.2_B_5_Hz.mp4)
+*   **45 Hz Flicker:** f = 45 Hz.
+*     
+https://github.com/user-attachments/assets/153c96ab-d972-41f0-9f36-cc93dc6c622c
 
 ---
 
@@ -178,7 +185,9 @@ The first task was testing the buzzer using Arduino digital output.
 
 
 <p align="center">
-  <img src="Ex.2_Task.1.jpeg" width="300"/>
+	<img width="300" height="450" alt="Ex 2_Task 1" src="https://github.com/user-attachments/assets/8d6c2fe5-fee1-438e-8122-eabd49b7b246" />
+
+ 
 </p>
 
 
@@ -199,12 +208,14 @@ The LCD display was connected using I2C communication.
 ### 📷 LCD Circuit
 
 <p align="center">
-  <img src="Ex.2_Task.2.jpeg" width="300"/>
+	<img width="300" height="450" alt="Ex 2_Task 2" src="https://github.com/user-attachments/assets/60902893-465b-4a21-bb44-53f872c658ad" />
+
+  
 </p>
 
-### 🎥 LCD Demo
+### 🎥 LCD Demo  
 
-[Watch Video](Ex.2_Task.2.mp4)
+https://github.com/user-attachments/assets/baf161be-c9f9-4e3a-95a5-e1a8fc169ac7
 
 ### 💡 Observations & Challenges
 
@@ -220,13 +231,11 @@ The RTC module was added to keep real-world time.
 
 ### 📷 RTC Setup
 
-<p align="center">
-  <img src="Ex.2_Task.3.jpeg" width="300"/>
-</p>
+<img width="300" height="450" alt="Ex 2_Task 3" src="https://github.com/user-attachments/assets/4929c1bc-a993-4ff0-8610-8f09926273d6" />
 
-### 🎥 RTC Working Video
+### 🎥 RTC Working Video  
 
-[Watch Video](Ex.2_Task.3.mp4)
+https://github.com/user-attachments/assets/600499a2-2906-4cf1-beb3-49a5f48ee7fa
 
 ### 💡 Observations & Challenges
 - Used Breadboard to connect the battery, with the LCD Display
@@ -241,9 +250,9 @@ The RTC module was added to keep real-world time.
 
 Push buttons were connected using INPUT_PULLUP configuration.
 
-### 🎥 Button Demo
+### 🎥 Button Demo  
 
-(https://github.com/user-attachments/assets/dbd2c558-a7f7-4537-bc88-e2f6c9500fd0)
+https://github.com/user-attachments/assets/dbd2c558-a7f7-4537-bc88-e2f6c9500fd0
 
 ### 💡 Observations & Challenges
 - When the push button was pressed, the onboard Arduino “L” LED lit up successfully.
@@ -338,9 +347,9 @@ After successful testing, the gesture detection logic was integrated into the fi
 ---
 
 
-### 🎥 Final Working Demonstration
+### 🎥 Final Working Demonstration  
 
-[▶ Watch Final Alarm Clock Demo](https://github.com/KoyaniDhruvit/dhruvit-ddf-portfolio/raw/main/Ex.2_Alaram.mp4)
+https://github.com/user-attachments/assets/bdc7f2a5-75f6-427f-bc89-d01dadb7829d
 
 ---
 
