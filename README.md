@@ -243,7 +243,7 @@ Push buttons were connected using INPUT_PULLUP configuration.
 
 ### 🎥 Button Demo
 
-[Watch Video](Ex.2_Task.4.mp4)
+(https://github.com/user-attachments/assets/dbd2c558-a7f7-4537-bc88-e2f6c9500fd0)
 
 ### 💡 Observations & Challenges
 - When the push button was pressed, the onboard Arduino “L” LED lit up successfully.
