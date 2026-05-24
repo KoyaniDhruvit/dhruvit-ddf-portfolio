@@ -353,5 +353,85 @@ https://github.com/user-attachments/assets/bdc7f2a5-75f6-427f-bc89-d01dadb7829d
 
 ---
 
+# 💨 Exercise 3: Sensors & Actuators
+
+## 🧪 Development Process
+
+The project was developed in several stages.
+
+### Stage 1 – MOSFET Module Testing
+
+Before connecting the pneumatic system, we first connected the pumps and valve to the MOSFET driver modules and verified that the modules were switching correctly.
+
+A simple test script was uploaded to the Arduino to activate each MOSFET output individually. The built-in LEDs on the MOSFET modules were used to confirm that the control signals were working correctly.
 
 
+### 🎥 MOSFET Test Video  
+
+https://github.com/user-attachments/assets/d4ee4440-363a-4fbc-9610-55d3d74a8079
+
+---
+
+### Stage 2 – Pneumatic System Assembly
+
+After confirming that the MOSFET modules were working, we connected the inflatable pillow, air pumps, valve, and tubing to build the complete pneumatic system.
+
+The system followed this sequence:
+
+1. Inflate the pillow
+2. Hold the air
+3. Deflate the pillow
+4. Rest before repeating
+
+During the first test, the pillow inflated successfully but failed to deflate correctly.
+
+### ❌ Problem Encountered
+
+Initially, the pneumatic system did not work as expected because one of the pumps was connected incorrectly.
+
+As a result:
+- The pillow could inflate.
+- The deflation process did not work correctly.
+
+### ✅ Solution
+
+We checked the wiring and pneumatic connections and identified that the pump configuration was incorrect.
+
+After correcting the pump connections, the inflation and deflation cycle worked as intended and the pillow responded correctly to the control code.
+
+### 🎥 Pneumatic System  
+
+https://github.com/user-attachments/assets/330345ae-cbb2-4693-9904-5e9251b71056
+
+### Stage 3 – Light Sensor Integration
+
+Once the pneumatic system was operating correctly, an LDR light sensor was integrated into the system.
+
+The Arduino continuously measured the ambient light level and used it to control the pillow behaviour:
+
+- Dark environment → pillow inflates
+- Bright environment → pillow deflates
+
+This transformed the pneumatic setup into a light-reactive smart pillow.
+
+### 💡 Design Inspiration
+
+The inspiration for this project came from the lecture on sensors and actuators, where we learned about CdS photoresistors (LDRs) and their use in automatic light-triggered systems. Since an LDR can detect changes in ambient light levels, we decided to explore how environmental light could be used to control a physical object.
+
+This led to the idea of creating a light-reactive pneumatic pillow: when the surroundings become dark, the pillow inflates, and when the environment becomes bright again, the pillow deflates. The project combines sensor-based input with pneumatic actuation to create a simple but intuitive interaction.
+
+###  Light Sensor Testing
+
+Before integrating the LDR into the pneumatic system, the sensor was tested using the Arduino Serial Monitor.
+
+The video shows the real-time light values measured by the photoresistor under different lighting conditions. Covering the sensor reduced the measured values, while exposing it to brighter light increased the readings.
+
+These measurements were used to determine an appropriate threshold value for distinguishing between bright and dark environments.
+
+### 🎥LDR Sensor Test Video  
+
+https://github.com/user-attachments/assets/7797b6bb-b476-4c9b-9166-4ab022bf71de
+
+### 🎥 Final Demonstration  
+
+https://github.com/user-attachments/assets/94f35f57-c67d-42d0-8b51-9822ae64b9f1
