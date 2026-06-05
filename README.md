@@ -352,6 +352,7 @@ After successful testing, the gesture detection logic was integrated into the fi
 https://github.com/user-attachments/assets/bdc7f2a5-75f6-427f-bc89-d01dadb7829d
 
 ---
+---
 
 # 💨 Exercise 3: Sensors & Actuators
 
@@ -435,3 +436,49 @@ https://github.com/user-attachments/assets/7797b6bb-b476-4c9b-9166-4ab022bf71de
 ### 🎥 Final Demonstration  
 
 https://github.com/user-attachments/assets/94f35f57-c67d-42d0-8b51-9822ae64b9f1
+
+---
+---
+
+# 🧵 Exercise 4: E-Textiles
+
+## 📖 Project Overview
+
+In this exercise, I created an e-textile patch using conductive thread, a coin-cell battery holder, and five LEDs. The goal was to learn how electronic components can be integrated into fabric using sewing techniques.
+
+---
+
+## 🔧 Construction Process
+
+The battery holder was sewn into the center of the patch and five LEDs were connected using conductive thread.
+
+### 📷 Circuit Assembly
+
+<p align="center">
+  <img width="350" height="350" alt="Image" src="https://github.com/user-attachments/assets/5dba75ed-ce72-4827-8730-185695efe81e" />
+</p>
+
+This image shows the circuit connections before the decorative fabric layer was added.
+
+---
+
+### 📷 Final Design
+
+<p align="center">
+  <img width="350" height="350" alt="Image" src="https://github.com/user-attachments/assets/892642cd-53f1-4788-af5f-32c60c6bb2ee" />
+</p>
+
+The final design uses a decorative fabric layer while keeping all LEDs functional.
+
+---
+
+## 💡 Observations & Challenges
+
+- Conductive thread was used to create the electrical connections.
+- Care was required to avoid short circuits between conductive traces.
+- The circuit was tested during sewing to verify all LED connections.
+- All five LEDs illuminated successfully in the final design.
+
+## 📚 Reflection
+
+This exercise introduced me to wearable electronics and soft circuits. I learned how to combine sewing techniques with basic electronics to create a functional illuminated textile design.
