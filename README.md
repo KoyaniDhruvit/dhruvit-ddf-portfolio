@@ -482,3 +482,19 @@ The final design uses a decorative fabric layer while keeping all LEDs functiona
 ## 📚 Reflection
 
 This exercise introduced me to wearable electronics and soft circuits. I learned how to combine sewing techniques with basic electronics to create a functional illuminated textile design.
+
+# 💻 OnShape CAD Self-Study
+
+As part of the Digital Design and Fabrication course, I completed the required OnShape CAD training modules:
+
+- Introduction to Parametric Feature-Based CAD
+- Introduction to Sketching
+- Introduction to Part Studios
+
+The training introduced the fundamentals of parametric CAD modelling, sketch creation, constraints, dimensions, and part design within the OnShape environment.
+
+### 📷 Training Dashboard
+
+<p align="center">
+  <img width="800" height="500" alt="Screenshot (20)" src="https://github.com/user-attachments/assets/f6198ff0-d71c-4e06-9e2d-a116515e8d3f" />
+</p>
