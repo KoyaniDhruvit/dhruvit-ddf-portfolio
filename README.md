@@ -483,6 +483,9 @@ The final design uses a decorative fabric layer while keeping all LEDs functiona
 
 This exercise introduced me to wearable electronics and soft circuits. I learned how to combine sewing techniques with basic electronics to create a functional illuminated textile design.
 
+---
+---
+
 # 💻 OnShape CAD Self-Study
 
 As part of the Digital Design and Fabrication course, I completed the required OnShape CAD training modules:
@@ -498,3 +501,87 @@ The training introduced the fundamentals of parametric CAD modelling, sketch cre
 <p align="center">
   <img width="800" height="500" alt="Screenshot (20)" src="https://github.com/user-attachments/assets/f6198ff0-d71c-4e06-9e2d-a116515e8d3f" />
 </p>
+
+---
+---
+
+# 🪵 Exercise 5: CNC Milling – Tea Light Holder
+
+## 📖 Project Overview
+
+In this exercise, I designed and manufactured a wooden tea light candle holder using Inkscape and a CNC milling machine. The objective was to learn the basics of vector design, Bézier curves, and the CNC milling workflow, from creating a digital design to producing the final wooden object.
+
+## 🎨 Design Inspiration
+
+For my design, I chose a simple and decorative shape that could be manufactured using CNC milling while also functioning as a tea light holder. The design was created in Inkscape by tracing the outline with Bézier curves and adding the required candle pocket in the center.
+
+## 🖊️ Design Process
+
+The design was first created in Inkscape using Bézier curves. After completing the outline, a **39.5 mm** diameter circle was added in the center for the tea light candle, following the exercise requirements. The final SVG file was then prepared for CNC machining.
+
+## 🪵 CNC Milling Process
+
+The SVG design was imported into the CAM software, where the toolpaths were generated for machining. The CNC milling machine was then used to cut the outer shape and mill the circular pocket for the tea light holder.
+
+### 🎥 CNC Milling Demonstration 
+https://github.com/user-attachments/assets/6f6de73d-ec4c-4a9a-94ca-4b8d2aba2d72
+
+## 📷 Final Product
+
+<p align="center">
+  <img width="350" height="350" alt="Image" src="https://github.com/user-attachments/assets/5e433176-25be-40a5-b6a1-d26593434637" />  <img width="350" height="350" alt="Image" src="https://github.com/user-attachments/assets/05271475-7d46-454b-8c79-34486bff3671" />
+	
+</p>
+
+## 💡 Observations & Challenges
+
+- Designing with Bézier curves was challenging at first because it was my first experience using Inkscape for CNC design.
+- Creating smooth curves and a clean outline required several adjustments.
+- After refining the design, the final SVG was successfully prepared for CNC milling.
+- The milling process accurately reproduced the digital design in wood.
+
+## 📚 Reflection
+
+This exercise introduced me to the complete CNC manufacturing workflow, from digital vector design to the final machined product. It also improved my understanding of Bézier curve editing, design preparation for manufacturing, and the importance of creating clean vector paths before CNC machining.
+
+---
+---
+
+# ✂️ Exercise 6: Laser Cut Business Card
+
+## 📖 Project Overview
+
+In this exercise, I designed a personalized business card using Inkscape and produced it using a laser cutter. The goal was to learn how to combine vector cutting and raster engraving in a single design.
+
+## 🎨 Design Inspiration
+
+I created a simple business card by adding my photo, personal logo, name, study program, and university details. The design was then prepared for laser engraving and cutting.
+
+## 🖊️ Design Process
+
+The business card was designed in Inkscape using both vector and raster elements. After arranging the photo, logo, and text, the final design was exported for laser cutting.
+
+## 🔥 Laser Cutting Process
+
+The final design was imported into the laser cutter software, where the engraving and cutting settings were configured before producing the wooden business card.
+
+### 🎥 Laser Cutting Demonstration 
+https://github.com/user-attachments/assets/f2ede445-8707-4cf5-9627-61aac193ad5a
+
+## 📷 Final Business Card
+
+<p align="center">
+  <img width="450" height="300" alt="Image" src="https://github.com/user-attachments/assets/df1b8022-f972-44dc-bed9-13720eef1707" />
+</p>
+
+## 💡 Observations & Challenges
+
+- This was my first experience designing a business card for laser cutting.
+- Preparing the layout in Inkscape required some adjustments.
+- The laser settings had to be configured based on the thickness of the wooden material.
+- The card outline had to be positioned carefully so that the business card could be cut properly from the wood.
+- The final engraving and cutting matched the digital design well.
+
+## 📚 Reflection
+
+This exercise helped me learn how to prepare a design for laser cutting using Inkscape. I also gained experience in combining images, text, and vector graphics into a finished product.
