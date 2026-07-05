@@ -589,5 +589,7 @@ I also wanted to make the design more personal, so I added my initials **"DK"** 
 - At the beginning, I received some design errors because my sketches were not complete.
 - After practicing for some time, using the design tools became much easier.
 - I used the Sketch tool to create the basic shape, Extrude to make it into a 3D model and Fillet to round the sharp edges of the stand.
-- Once the design was finished, I exported the model and imported it into QIDI Studio for slicing. Because one side of the stand had an overhang, I added supports before    printing so that the model could be printed correctly.
+- Once the design was finished, I imported the model into QIDI Studio before printing.
+- I did not change the default print settings.
+- I only enabled supports because one side of the stand needed support during printing.
 - The final printed stand worked well and the phone fit correctly.
