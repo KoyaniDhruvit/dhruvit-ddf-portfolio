@@ -32,7 +32,7 @@ This portfolio focuses not only on final results but also on the thinking and it
 
 # 🛠 Exercises
 
-# 🧪 Exercise 1:  Electrical Circuits
+# Exercise 1:  Electrical Circuits
 
 ## Introduction
 
@@ -51,11 +51,11 @@ I tested the behavior of a green LED by swapping different resistors ($R1$) to o
 | 1000 | 2.77 | 2.51 |
 | 4700 | 2.97 | 2.31 |
 
-### 💡 Observations
+### Observations
 
 As the resistance of $R1$ increased, the brightness of the LED noticeably decreased. The voltage drop across $R1$ increased with higher resistance values. Changing $R1$ directly affected the LED operating voltage and brightness.
 
-### 📷 Simple LED Circuit Setup
+### Simple LED Circuit Setup
 <p align="center">
 	<img width="300" height="300" alt="Task 1 1" src="https://github.com/user-attachments/assets/71fc800b-9c74-4c3e-baba-1b298deb4084" />
 
@@ -66,14 +66,14 @@ As the resistance of $R1$ increased, the brightness of the LED noticeably decrea
 
 I introduced a 2-position switch and a 1kΩ potentiometer to control the state and intensity of the light.
 
-### 💡 Observations
+### Observations
 
 The switch acts as a physical break in the circuit. When the switch is in the "closed" position, the circuit is complete and the LED lights up. When it is "open," the current flow stops and the LED turns off.
 
 When i connect the switch in opposite direction the LED still works exactly the same way because a switch doesn't have a positive or negative side. It doesn't matter which way you plug it in; its only job is to connect or disconnect the two points in the circuit.
 
 
-### 📷 Switchable LED Circuit
+### Switchable LED Circuit
 
 <p align="center">
   <img width="300" height="450" alt="Task 1 2" src="https://github.com/user-attachments/assets/9fc0ad9a-2fd1-4767-afbd-1051f4568fc8" />
@@ -90,12 +90,12 @@ When i connect the switch in opposite direction the LED still works exactly the 
 | **Dimmed** | 2.30 V | 4.45 V |
 | **OFF** | 0.005 V | 4.50 V |
 
-### 💡 Observations
+### Observations
 
 I observed that rotating the potentiometer provides smooth, continuous control over the LED's light intensity. My data shows an inverse relationship between the LED voltage ($V_{LED}$) and the potentiometer output voltage ($V_2$). This is an analog relationship where the potentiometer acts as a variable voltage divider.
 
 
-### 🎥 Dimmable LED Demonstration (Analog)  
+### Dimmable LED Demonstration (Analog)  
 
 https://github.com/user-attachments/assets/b75dadea-3125-4c4f-8b81-2e51e7971104
 
@@ -106,7 +106,7 @@ https://github.com/user-attachments/assets/b75dadea-3125-4c4f-8b81-2e51e7971104
 
 Using an **IRLZ44N NPN MOSFET**, I controlled a 12V LED strip using a 5V control signal.
 
-### 💡 Observations
+### Observations
 
 I observed a specific behavior regarding the USB power board. When powering the 5V control side via a laptop or mobile device, the voltage was detected and the board functioned as expected. However, when using a direct power adapter, the USB module did not show the same behavior or detection.
 
@@ -114,7 +114,7 @@ I observed a specific behavior regarding the USB power board. When powering the 
 The MOSFET acts as an electronic switch. When 5V is applied to the **Gate**, it allows current to flow from the **Drain** to the **Source**, completing the 12V circuit for the LED strip.
 
 
-### 📷 MOSFET Switching Setup
+### MOSFET Switching Setup
 
 <p align="center">
   <img width="300" height="450" alt="Task 2 1" src="https://github.com/user-attachments/assets/e339e4f1-7e34-4ad2-9233-442bdf2164a8" />
@@ -127,7 +127,7 @@ I used a PWM generator at 90Hz to observe how the **Duty Cycle** and **Frequency
 
 #### Part A: Duty Cycle ($f = 90\text{Hz}$)
 
-### 💡 Observations
+### Observations
 
 * **2% Duty Cycle:** The light was dim.
 * **15% Duty Cycle:** The light was noticeably brighter than at 2%.
@@ -138,7 +138,7 @@ I used a PWM generator at 90Hz to observe how the **Duty Cycle** and **Frequency
 **Relationship:** I observed a direct linear relationship: as the **Duty Cycle increased**, the **brightness increased** proportionally. 
 **Mechanism:** Even though the LED is technically switching ON and OFF rapidly, the eye perceives the average power as a change in intensity.
 
-### 📷 PWM Duty Cycle Setup
+### PWM Duty Cycle Setup
 
 <p align="center">
   <img width="300" height="450" alt="Task 2 2" src="https://github.com/user-attachments/assets/86881a3d-3ad1-45d9-a86e-dda159d1f794" />
@@ -171,17 +171,17 @@ Through this exercise, I learned the difference between analog dimming (potentio
 ---
 ---
 
-# ⏰ Exercise 2 – Arduino Alarm Clock
+# Exercise 2 – Arduino Alarm Clock
 
-## 📖 Project Overview
+## Project Overview
 In this exercise, I built a functional Arduino-based alarm clock using multiple electronic components and sub-circuits.
 
 
-## 🔌 Sub-Circuit 1 – Buzzer Test
+## Sub-Circuit 1 – Buzzer Test
 
 The first task was testing the buzzer using Arduino digital output.
 
-### 📷 Circuit Images
+### Circuit Images
 
 
 <p align="center">
@@ -191,7 +191,7 @@ The first task was testing the buzzer using Arduino digital output.
 </p>
 
 
-### 💡 Observations
+### Observations
 - Linux Problem with rights (sudo chmod 666 /dev/ttyACM0)
 - Made loud beeping
 - Didnt connect vin
@@ -201,11 +201,11 @@ The first task was testing the buzzer using Arduino digital output.
 
 ---
 
-## 📺 Sub-Circuit 2 – LCD Display
+## Sub-Circuit 2 – LCD Display
 
 The LCD display was connected using I2C communication.
 
-### 📷 LCD Circuit
+### LCD Circuit
 
 <p align="center">
 	<img width="300" height="450" alt="Ex 2_Task 2" src="https://github.com/user-attachments/assets/60902893-465b-4a21-bb44-53f872c658ad" />
@@ -213,11 +213,11 @@ The LCD display was connected using I2C communication.
   
 </p>
 
-### 🎥 LCD Demo  
+### LCD Demo  
 
 https://github.com/user-attachments/assets/baf161be-c9f9-4e3a-95a5-e1a8fc169ac7
 
-### 💡 Observations & Challenges
+### Observations & Challenges
 
 - The information was displayed through the Serial Monitor instead of directly appearing on the LCD at first.
 - Installed the additional Adafruit BusIO dependency library to make the LCD communication work correctly.
@@ -225,19 +225,19 @@ https://github.com/user-attachments/assets/baf161be-c9f9-4e3a-95a5-e1a8fc169ac7
 
 ---
 
-## 🕒 Sub-Circuit 3 – RTC Module
+## Sub-Circuit 3 – RTC Module
 
 The RTC module was added to keep real-world time.
 
-### 📷 RTC Setup
+### RTC Setup
 
 <img width="300" height="450" alt="Ex 2_Task 3" src="https://github.com/user-attachments/assets/4929c1bc-a993-4ff0-8610-8f09926273d6" />
 
-### 🎥 RTC Working Video  
+### RTC Working Video  
 
 https://github.com/user-attachments/assets/600499a2-2906-4cf1-beb3-49a5f48ee7fa
 
-### 💡 Observations & Challenges
+### Observations & Challenges
 - Used Breadboard to connect the battery, with the LCD Display
 - This confirmed that the button input was being detected correctly by the Arduino.
 - Used real time
@@ -246,28 +246,28 @@ https://github.com/user-attachments/assets/600499a2-2906-4cf1-beb3-49a5f48ee7fa
 
 ---
 
-## 🔘 Sub-Circuit 4 – Push Buttons
+## Sub-Circuit 4 – Push Buttons
 
 Push buttons were connected using INPUT_PULLUP configuration.
 
-### 🎥 Button Demo  
+### Button Demo  
 
 https://github.com/user-attachments/assets/dbd2c558-a7f7-4537-bc88-e2f6c9500fd0
 
-### 💡 Observations & Challenges
+### Observations & Challenges
 - When the push button was pressed, the onboard Arduino “L” LED lit up successfully.
 - Buttons were used for alarm controls.
 
 
 ---
 
-## ⏰ Final Alarm Clock
+## Final Alarm Clock
 
 The final system combined all sub-circuits into one fully interactive alarm clock system developed through multiple iterations and custom modifications.
 
 Unlike the basic example provided in class, this implementation included several additional interactive features and custom logic improvements.
 
-### 🚀 Custom Features Implemented
+### Custom Features Implemented
 
 - Multi-page LCD menu system
 - Alarm enable/disable controls
@@ -283,7 +283,7 @@ Unlike the basic example provided in class, this implementation included several
 
 ---
 
-### 🎵 Melody System
+### Melody System
 
 Three different alarm styles were implemented:
 
@@ -297,7 +297,7 @@ Users could preview melodies before selecting them.
 
 ---
 
-### 👋 Gesture Control Feature
+### Gesture Control Feature
 
 An ultrasonic distance sensor (URM37) was integrated into the system to create a gesture-based snooze function.
 
@@ -310,7 +310,7 @@ This feature required additional testing and debugging because the sensor initia
 
 ---
 
-### 🧪 Sensor Testing & Debugging
+### Sensor Testing & Debugging
 
 Before integrating the ultrasonic sensor into the final alarm system, a separate testing script was used to validate sensor communication and distance measurements.
 
@@ -324,7 +324,7 @@ After successful testing, the gesture detection logic was integrated into the fi
 
 ---
 
-### 🔌 Final Alarm Clock Wiring
+### Final Alarm Clock Wiring
 
 | Wire Color | Arduino Pin |
 |---|---|
@@ -335,7 +335,7 @@ After successful testing, the gesture detection logic was integrated into the fi
 
 ---
 
-### 🎮 Button Functions
+### Button Functions
 
 | Button Color | Function |
 |---|---|
@@ -347,112 +347,88 @@ After successful testing, the gesture detection logic was integrated into the fi
 ---
 
 
-### 🎥 Final Working Demonstration  
+### Final Working Demonstration  
 
 https://github.com/user-attachments/assets/bdc7f2a5-75f6-427f-bc89-d01dadb7829d
 
 ---
 ---
 
-# 💨 Exercise 3: Sensors & Actuators
+# Exercise 3: Sensors & Actuators
 
-## 🧪 Development Process
+## Project Overview
 
-The project was developed in several stages.
+In this exercise, we built a light-reactive pneumatic pillow using two air pumps, an air valve, MOSFET modules, and an LDR sensor with step by step process.
 
-### Stage 1 – MOSFET Module Testing
+### Step 1 – MOSFET Module Testing
 
-Before connecting the pneumatic system, we first connected the pumps and valve to the MOSFET driver modules and verified that the modules were switching correctly.
+Before connecting the pillow, we first connected the pumps and the air valve to the MOSFET modules. This helped us check that all the outputs were working correctly.
 
-A simple test script was uploaded to the Arduino to activate each MOSFET output individually. The built-in LEDs on the MOSFET modules were used to confirm that the control signals were working correctly.
+I uploaded a simple test script to the Arduinoto turn each MOSFET output on in turn. The on-board LEDs on the MOSFET modules were used to verify that the control signals were functioning correctly.
 
-
-### 🎥 MOSFET Test Video  
+### MOSFET Test Video  
 
 https://github.com/user-attachments/assets/d4ee4440-363a-4fbc-9610-55d3d74a8079
 
----
 
-### Stage 2 – Pneumatic System Assembly
+### Step 2 – Pneumatic System Assembly
 
-After confirming that the MOSFET modules were working, we connected the inflatable pillow, air pumps, valve, and tubing to build the complete pneumatic system.
+Once we tested the MOSFET modules, we connected up the pillow, pumps, and air valve.
 
-The system followed this sequence:
+Our first test was to inflate the pillow and then deflate it.
 
-1. Inflate the pillow
-2. Hold the air
-3. Deflate the pillow
-4. Rest before repeating
+### Observations & Challenges
 
-During the first test, the pillow inflated successfully but failed to deflate correctly.
+- One of the pumps was connected incorrectly.
+- Because of this, the pillow only inflated.
+- After correcting the pump connection, both inflate and deflate functions worked correctly.
 
-### ❌ Problem Encountered
 
-Initially, the pneumatic system did not work as expected because one of the pumps was connected incorrectly.
-
-As a result:
-- The pillow could inflate.
-- The deflation process did not work correctly.
-
-### ✅ Solution
-
-We checked the wiring and pneumatic connections and identified that the pump configuration was incorrect.
-
-After correcting the pump connections, the inflation and deflation cycle worked as intended and the pillow responded correctly to the control code.
-
-### 🎥 Pneumatic System  
+### Pneumatic System  
 
 https://github.com/user-attachments/assets/330345ae-cbb2-4693-9904-5e9251b71056
 
-### Stage 3 – Light Sensor Integration
+### Step 3 – Light Sensor Integration
 
-Once the pneumatic system was operating correctly, an LDR light sensor was integrated into the system.
+After the pneumatic system was working, we added an LDR sensor.
 
-The Arduino continuously measured the ambient light level and used it to control the pillow behaviour:
+We choose LDR sensor because in the lecture we learned about the LDR sensor, so we wanted to use it to control the pillow automatically.
 
-- Dark environment → pillow inflates
-- Bright environment → pillow deflates
+The final behaviour was:
 
-This transformed the pneumatic setup into a light-reactive smart pillow.
+- Dark room → Pillow inflates
+- Bright room → Pillow deflates
 
-### 💡 Design Inspiration
-
-The inspiration for this project came from the lecture on sensors and actuators, where we learned about CdS photoresistors (LDRs) and their use in automatic light-triggered systems. Since an LDR can detect changes in ambient light levels, we decided to explore how environmental light could be used to control a physical object.
-
-This led to the idea of creating a light-reactive pneumatic pillow: when the surroundings become dark, the pillow inflates, and when the environment becomes bright again, the pillow deflates. The project combines sensor-based input with pneumatic actuation to create a simple but intuitive interaction.
-
-###  Light Sensor Testing
-
-Before integrating the LDR into the pneumatic system, the sensor was tested using the Arduino Serial Monitor.
-
-The video shows the real-time light values measured by the photoresistor under different lighting conditions. Covering the sensor reduced the measured values, while exposing it to brighter light increased the readings.
-
-These measurements were used to determine an appropriate threshold value for distinguishing between bright and dark environments.
-
-### 🎥LDR Sensor Test Video  
+### LDR Sensor Test Video  
 
 https://github.com/user-attachments/assets/7797b6bb-b476-4c9b-9166-4ab022bf71de
 
-### 🎥 Final Demonstration  
+##  Observations
+
+- The LDR was tested using the Serial Monitor.
+- Different lighting conditions were used to check the sensor values.
+- After testing the values, we selected a suitable threshold for the final program.
+
+###  Final Demonstration  
 
 https://github.com/user-attachments/assets/94f35f57-c67d-42d0-8b51-9822ae64b9f1
 
 ---
 ---
 
-# 🧵 Exercise 4: E-Textiles
+# Exercise 4: E-Textiles
 
-## 📖 Project Overview
+## Project Overview
 
 In this exercise, I created an e-textile patch using conductive thread, a coin-cell battery holder, and five LEDs. The goal was to learn how electronic components can be integrated into fabric using sewing techniques.
 
 ---
 
-## 🔧 Construction Process
+## Construction Process
 
 The battery holder was sewn into the center of the patch and five LEDs were connected using conductive thread.
 
-### 📷 Circuit Assembly
+### Circuit Assembly
 
 <p align="center">
   <img width="350" height="350" alt="Image" src="https://github.com/user-attachments/assets/5dba75ed-ce72-4827-8730-185695efe81e" />
@@ -462,7 +438,7 @@ This image shows the circuit connections before the decorative fabric layer was 
 
 ---
 
-### 📷 Final Design
+### Final Design
 
 <p align="center">
   <img width="350" height="350" alt="Image" src="https://github.com/user-attachments/assets/892642cd-53f1-4788-af5f-32c60c6bb2ee" />
@@ -472,116 +448,146 @@ The final design uses a decorative fabric layer while keeping all LEDs functiona
 
 ---
 
-## 💡 Observations & Challenges
+## Observations & Challenges
 
 - Conductive thread was used to create the electrical connections.
 - Care was required to avoid short circuits between conductive traces.
 - The circuit was tested during sewing to verify all LED connections.
 - All five LEDs illuminated successfully in the final design.
 
-## 📚 Reflection
+## Reflection
 
 This exercise introduced me to wearable electronics and soft circuits. I learned how to combine sewing techniques with basic electronics to create a functional illuminated textile design.
 
 ---
 ---
 
-# 💻 OnShape CAD Self-Study
+# Exercise 5: CNC Milling – Tea Light Holder
 
-As part of the Digital Design and Fabrication course, I completed the required OnShape CAD training modules:
+## Project Overview
+In this exercise, I designed my own wooden tea light holder in Inkscape and later it was manufactured using the CNC milling machine.
 
-- Introduction to Parametric Feature-Based CAD
-- Introduction to Sketching
-- Introduction to Part Studios
+Since this was my first time using Inkscape, and it was very difficult for me to find tools and how to use them. My first design was rejectd because I didn't use the Bezier tool in perfect way. But when i made draw 2nd time i make a simple final design with the perfect 39.5 mm Candle pocket circle at the middel. This final design was accepted and used for CNC milling.
 
-The training introduced the fundamentals of parametric CAD modelling, sketch creation, constraints, dimensions, and part design within the OnShape environment.
-
-### 📷 Training Dashboard
+## Inkscape Design
 
 <p align="center">
-  <img width="800" height="500" alt="Screenshot (20)" src="https://github.com/user-attachments/assets/f6198ff0-d71c-4e06-9e2d-a116515e8d3f" />
+  <img width="400" height="300" alt="Image" src="https://github.com/user-attachments/assets/fd2a3137-4469-4d43-b39c-d8333e49ec62" />
 </p>
 
----
----
-
-# 🪵 Exercise 5: CNC Milling – Tea Light Holder
-
-## 📖 Project Overview
-
-In this exercise, I designed and manufactured a wooden tea light candle holder using Inkscape and a CNC milling machine. The objective was to learn the basics of vector design, Bézier curves, and the CNC milling workflow, from creating a digital design to producing the final wooden object.
-
-## 🎨 Design Inspiration
-
-For my design, I chose a simple and decorative shape that could be manufactured using CNC milling while also functioning as a tea light holder. The design was created in Inkscape by tracing the outline with Bézier curves and adding the required candle pocket in the center.
-
-## 🖊️ Design Process
-
-The design was first created in Inkscape using Bézier curves. After completing the outline, a **39.5 mm** diameter circle was added in the center for the tea light candle, following the exercise requirements. The final SVG file was then prepared for CNC machining.
-
-## 🪵 CNC Milling Process
-
-The SVG design was imported into the CAM software, where the toolpaths were generated for machining. The CNC milling machine was then used to cut the outer shape and mill the circular pocket for the tea light holder.
-
-### 🎥 CNC Milling Demonstration 
+### CNC Milling Process 
 https://github.com/user-attachments/assets/6f6de73d-ec4c-4a9a-94ca-4b8d2aba2d72
 
-## 📷 Final Product
+## Final Product
 
 <p align="center">
   <img width="350" height="350" alt="Image" src="https://github.com/user-attachments/assets/5e433176-25be-40a5-b6a1-d26593434637" />  <img width="350" height="350" alt="Image" src="https://github.com/user-attachments/assets/05271475-7d46-454b-8c79-34486bff3671" />
 	
 </p>
 
-## 💡 Observations & Challenges
+## Observations & Challenges
 
 - Designing with Bézier curves was challenging at first because it was my first experience using Inkscape for CNC design.
 - Creating smooth curves and a clean outline required several adjustments.
 - After refining the design, the final SVG was successfully prepared for CNC milling.
 - The milling process accurately reproduced the digital design in wood.
 
-## 📚 Reflection
-
-This exercise introduced me to the complete CNC manufacturing workflow, from digital vector design to the final machined product. It also improved my understanding of Bézier curve editing, design preparation for manufacturing, and the importance of creating clean vector paths before CNC machining.
-
 ---
 ---
 
-# ✂️ Exercise 6: Laser Cut Business Card
+# Exercise 6: Laser Cut Business Card
 
-## 📖 Project Overview
+## Project Overview
 
-In this exercise, I designed a personalized business card using Inkscape and produced it using a laser cutter. The goal was to learn how to combine vector cutting and raster engraving in a single design.
+In this exercise, I designed my own business card in Inkscape and produced it using a laser cutter.
 
-## 🎨 Design Inspiration
+I wanted to make something personal, so I added my own photo, my "D" logo, my name, study program and university details.
 
-I created a simple business card by adding my photo, personal logo, name, study program, and university details. The design was then prepared for laser engraving and cutting.
+I started by arranging my photo, logo and text in Inkscape. Although the design looked simple, I spent quite some time changing the size and position of each element until everything looked balanced.
 
-## 🖊️ Design Process
+Before starting the laser cutter, we measured the thickness of the wooden sheet and entered the value into the laser software so the correct settings could be used.
 
-The business card was designed in Inkscape using both vector and raster elements. After arranging the photo, logo, and text, the final design was exported for laser cutting.
+While waiting for my turn, I noticed that some other students had problems because their card outlines were not detected correctly by the laser cutter. After seeing this, I checked my own design one more time to make sure all the outlines were connected properly. Fortunately, my outline was correct and the business card was cut successfully on the first attempt.
 
-## 🔥 Laser Cutting Process
+## Inkscape Design
 
-The final design was imported into the laser cutter software, where the engraving and cutting settings were configured before producing the wooden business card.
+<p align="center">
+  <img width="350" height="300" alt="Image" src="https://github.com/user-attachments/assets/fb95f7b8-2a4a-463c-af5b-d9af2fb68b75" />
+</p>
 
-### 🎥 Laser Cutting Demonstration 
+### Laser Cutting Demonstration 
 https://github.com/user-attachments/assets/f2ede445-8707-4cf5-9627-61aac193ad5a
 
-## 📷 Final Business Card
+## Final Business Card
 
 <p align="center">
   <img width="450" height="300" alt="Image" src="https://github.com/user-attachments/assets/df1b8022-f972-44dc-bed9-13720eef1707" />
 </p>
 
-## 💡 Observations & Challenges
+## Observations & Challenges
 
-- This was my first experience designing a business card for laser cutting.
-- Preparing the layout in Inkscape required some adjustments.
-- The laser settings had to be configured based on the thickness of the wooden material.
-- The card outline had to be positioned carefully so that the business card could be cut properly from the wood.
-- The final engraving and cutting matched the digital design well.
+- This was my first time designing a business card in Inkscape.
+- The design looked simple,but it took longer than I expected to get everything in place.
+- The wood thickness was measured before the laser cutting because the machine settings depended on it.
+- I had never seen anything like this before, seeing my own design being cut by the laser.
+- The final business card looked almost the same as the design I created in Inkscape and specially photo of mine looks really cool.
 
-## 📚 Reflection
+---
+---
 
-This exercise helped me learn how to prepare a design for laser cutting using Inkscape. I also gained experience in combining images, text, and vector graphics into a finished product.
+# OnShape CAD Self-Study
+
+Before starting the 3D printing exercise, I completed the required OnShape self-study tutorials.
+
+This was my first time using OnShape, so it took me some time to understand how the software works. The tutorials helped me learn the basic tools and made it easier to create my own 3D model later. It was interesting to see how a simple sketch could be turned into a complete 3D design.
+
+The completed tutorials include:
+
+- Introduction to Parametric Feature-Based CAD
+- Introduction to Sketching
+- Introduction to Part Studios
+
+## Training Dashboard
+
+<p align="center">
+  <img width="800" height="500" alt="Screenshot (20)" src="https://github.com/user-attachments/assets/f6198ff0-d71c-4e06-9e2d-a116515e8d3f" />
+</p>
+
+---
+
+# Exercise 7: 3D Printing – Mobile Stand
+
+## Project Overview
+
+In this exercise, I designed a mobile stand using Onshape and later prepared it for 3D printing.
+
+I already have a mobile stand at home, but it does not have an opening for a charging cable. Because of that, I decided to design my own version with a charging slot so that I could charge my phone while it was on the stand.
+
+I also wanted to make the design more personal, so I added my initials **"DK"** at the base of the stand. The initials are visible when the phone is placed on the stand, giving it my own personal touch.
+
+### 3D Model
+
+<p align="center">
+	<img width="350" height="300" alt="Image" src="https://github.com/user-attachments/assets/4228f8a6-7606-4922-be57-cd34455aa7ca" />
+</p>
+
+### Slicer Preview
+
+<p align="center">
+	<img width="350" height="300" alt="Image" src="https://github.com/user-attachments/assets/e9eb2250-82dc-41ba-9728-441ccc9c2051" />
+</p>
+
+## Final Product
+
+<p align="center">
+	<img width="350" height="450" alt="Image" src="https://github.com/user-attachments/assets/b9520a34-fb53-42b1-a272-9d11cbec667f" />
+</p>
+
+## Process, Observations & Challenges
+
+- This was my first time creating a complete model in Onshape.
+- At the beginning, I received some design errors because my sketches were not complete.
+- After practicing for some time, using the design tools became much easier.
+- I used the Sketch tool to create the basic shape, Extrude to make it into a 3D model and Fillet to round the sharp edges of the stand.
+- Once the design was finished, I exported the model and imported it into QIDI Studio for slicing. Because one side of the stand had an overhang, I added supports before    printing so that the model could be printed correctly.
+- The final printed stand worked well and the phone fit correctly.
